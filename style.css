@@ -410,6 +410,11 @@ body {
   text-decoration: none !important;
 }
 
+.imagen-flecha {
+  position: relative !important;
+  left: 5px !important;
+}
+
 .fixture-titulo-clasificacion {
   font-family: "Inter", sans-serif;
   font-size: 15px;

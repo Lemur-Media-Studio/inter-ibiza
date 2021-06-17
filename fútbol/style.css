@@ -265,8 +265,13 @@ td {
   color: black;
 }
 
-.jornada-final a:hover {
-  color: #0436ff;
+.jornada-final:hover {
+  color: #0436ff !important;
+}
+
+.imagen-flecha {
+  position: relative !important;
+  left: 5px !important;
 }
 
 /* MOBILE STYLES FIXTURE */
