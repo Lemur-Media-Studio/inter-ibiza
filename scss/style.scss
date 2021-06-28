@@ -1,0 +1,15 @@
+@import "./base/colors.scss";
+@import "./components/header";
+@import "./components/nav-index";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
