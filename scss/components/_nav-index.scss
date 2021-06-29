@@ -115,12 +115,7 @@
   display: flex !important;
   flex-wrap: wrap !important;
   align-items: center;
-  background-color: $amarillo !important;
-}
-
-.navbar::before {
-  background-color: $azul;
-  opacity: 50% !important;
+  background-color: $azul !important;
 }
 
 .navbar li {
@@ -130,17 +125,17 @@
 
 .link-navbar {
   display: block;
-  color: $azul !important;
+  color: $blanco !important;
   padding: 8px 2.5rem 8px 0 !important;
   font-size: 20px !important;
   font-family: "Kanit", sans-serif !important;
   text-decoration: none !important;
-  border-right: $azul solid 1px;
+  border-right: $amarillo solid 1px;
   border-collapse: separate;
 }
 
 .link-navbar-submenu {
-  color: #0436ff;
+  color: $blanco;
   font-size: 18px;
   font-family: "Kanit", sans-serif;
   text-decoration: none;
@@ -161,7 +156,7 @@
 }
 
 .nav-submenu {
-  background-image: url(img/background.jpg);
+  background-image: url(../img/background-azul.jpg) !important;
 }
 
 .link-navbar-submenu:hover {
@@ -177,19 +172,27 @@
   display: none;
 }
 
+.link-final {
+  border-right: $azul 1px solid;
+}
+
 /* MOBILE styles */
 @media only screen and (max-width: 754px) {
   .section-1 {
     background-image: url(../img/isla-azul.png);
     background-size: cover;
-    padding: 50px 50px 20px 50px;
+    padding: 50px 0px 0px 0px;
     text-align: center;
+  }
+
+  .escudo {
+    height: 200px !important;
   }
 
   .title-encabezado {
     font-family: "Permanent Marker", sans-serif;
     color: aliceblue;
-    font-size: 48px !important;
+    font-size: 30px !important;
   }
 
   .titulo-aparece {
@@ -200,5 +203,12 @@
     background-image: none;
     background-color: $amarillo;
     padding: 5px;
+  }
+}
+
+/* TABLET styles */
+@media only screen and (min-width: 755px) and (max-width: 1024px) {
+  .link-navbar {
+    font-size: 10px !important;
   }
 }
