@@ -1,0 +1,443 @@
+/* Section 3 - Noticias */
+
+/* DESKTOP styles */
+.section-noticias-flex {
+  display: none;
+}
+
+.section-noticias-grid {
+  margin-top: 50px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 400px 390px 390px;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 5px;
+  column-gap: 10px;
+  grid-template-areas:
+    "noticia-1 noticia-1 noticia-2"
+    "noticia-1 noticia-1 noticia-3";
+}
+
+.noticia-principal {
+  grid-area: noticia-1;
+}
+
+.titulo-noticia-principal {
+  text-decoration: none;
+  color: aliceblue;
+  font-family: "Kanit", sans-serif;
+  font-size: 15px !important;
+  position: relative;
+  bottom: 90px;
+  left: 90px;
+}
+
+.encabezado-noticia-principal {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  color: black;
+  position: relative;
+  top: 30px;
+  left: 30px;
+}
+
+.noticia-2 {
+  grid-area: noticia-2;
+  margin-bottom: -15px;
+  margin-top: 10px;
+}
+
+.encabezado-noticia-2 {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  color: black;
+  position: relative;
+  top: 30px;
+  left: 30px;
+}
+
+.links-noticias {
+  text-decoration: none;
+}
+
+.index-titulo-noticia-principal {
+  text-decoration: none !important;
+  color: #f0f8ff;
+  font-family: "Kanit", sans-serif;
+  font-size: 40px !important;
+  position: relative;
+  bottom: 100px;
+  left: 0px;
+  background-color: #0436ff;
+  margin: 0 10px;
+  text-indent: 50px;
+}
+
+.index-titulo-noticia {
+  text-decoration: none;
+  color: #f0f8ff;
+  font-family: "Kanit", sans-serif;
+  font-size: 30px;
+  background-color: #0436ff;
+  margin: 0 40px 0 0;
+  text-indent: 30px;
+  position: relative;
+  bottom: 60px;
+  left: 20px;
+}
+
+.noticia-3 {
+  grid-area: noticia-3;
+  margin-top: -50px;
+}
+
+.encabezado-noticia-3 {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  color: black;
+  position: relative;
+  top: 30px;
+  left: 30px;
+}
+
+.index-titulo-noticia-principal:hover {
+  color: aliceblue !important;
+}
+
+.index-titulo-noticia:hover {
+  color: aliceblue !important;
+}
+
+/* Fin DESKTOP styles */
+
+/* MOBILE y TABLET styles */
+@media only screen and (max-width: 1269px) {
+  .section-noticias-grid {
+    display: none;
+  }
+
+  .section-noticias-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center !important;
+    align-items: center;
+    margin: 20px auto;
+  }
+
+  .imagen-noticia-2 {
+    margin-bottom: 20px;
+  }
+
+  .index-titulo-noticia-principal {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    text-align: center !important;
+    position: static;
+    font-size: 20px;
+    color: #0436ff;
+    font-size: 18px;
+    margin-left: 20px;
+    background-color: transparent !important;
+    margin-right: 30px !important;
+    margin: 5px;
+  }
+
+  .index-titulo-noticia-2 {
+    display: flex;
+    justify-content: center !important;
+    text-align: center !important;
+    position: static;
+    color: #0436ff;
+    font-size: 22px;
+    margin-right: 30px !important;
+  }
+
+  .index-titulo-noticia-principal:hover {
+    color: #0436ff !important;
+  }
+
+  .index-titulo-noticia {
+    display: none;
+  }
+
+  .noticia-2 {
+    margin-bottom: 0;
+  }
+  .noticia-3 {
+    grid-area: noticia-3;
+    margin-top: 0px;
+  }
+
+  .noticias-img-mobile {
+    width: 250px;
+  }
+}
+
+/* Section 4 - Fixture */
+
+/* DESKTOP-TABLET styles */
+
+.section-fixture-flex {
+  display: none;
+}
+
+.fixture-jornada-mobile {
+  display: none;
+}
+
+.fixture-resultado-mobile {
+  display: none;
+}
+
+.section-fixture-grid {
+  display: grid;
+  margin-top: 50px;
+  justify-content: center;
+  grid-template-areas:
+    "ultima-jornada tabla"
+    "proxima-jornada tabla";
+  column-gap: 5px;
+  grid-gap: 5px;
+  grid-template-columns: 435px 315px;
+  grid-template-rows: 265px 265px;
+}
+
+.fixture-ultima-jornada {
+  display: inline-block;
+  border: #0436ff solid 2px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 5px;
+  grid-area: ultima-jornada;
+  background-color: aliceblue;
+}
+
+.fixture-proxima-jornada {
+  display: inline-block;
+  border: #0436ff solid 2px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 5px;
+  grid-area: proxima-jornada;
+  background-color: aliceblue;
+}
+
+.fixture-titulo-jornada {
+  color: #0436ff !important;
+  font-family: "Kanit", sans-serif !important;
+  font-size: 28px !important;
+  text-decoration: none !important;
+}
+
+.imagen-flecha {
+  position: relative !important;
+  left: 5px !important;
+}
+
+.fixture-titulo-clasificacion {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  color: aliceblue;
+  background-color: #0436ff;
+  text-indent: 40px;
+}
+
+.fixture-resultado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-size: 25px;
+  color: black;
+  margin: 0 90px;
+  padding-top: 5px;
+  word-spacing: 5px;
+}
+
+.fixture-ubicacion {
+  display: flex;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  color: black;
+  padding: 10px;
+}
+
+.fixture-horario {
+  display: flex;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  color: black;
+  padding: 0 10px;
+}
+
+.fixture-img {
+  margin-right: 10px;
+}
+
+.fixture-clasificacion {
+  border: #0436ff solid 2px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 5px;
+  grid-area: tabla;
+  background-color: aliceblue;
+}
+
+.fixture-tabla-clasificacion {
+  border: aliceblue inset 0px;
+  border-collapse: collapse;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+}
+
+tr {
+  border: aliceblue inset 0;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+td {
+  border: aliceblue inset 0px;
+  border-collapse: collapse;
+  padding: 5px 15px;
+  text-align: center;
+}
+
+.fixture-col-pos {
+  background-color: #ffff4d;
+  color: #0436ff;
+  font-weight: bold;
+}
+
+.fixture-col-1 {
+  background-color: #fffff9;
+  color: #0436ff;
+}
+
+.fixture-col-2 {
+  background-color: #ffffe4;
+  color: #0436ff;
+}
+/* Fin DESKTOP-TABLET styles */
+
+/* MOBILE styles */
+@media only screen and (max-width: 754px) {
+  .section-fixture-grid {
+    display: none;
+  }
+
+  .fixture-resultado {
+    display: none;
+  }
+
+  .section-fixture-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .fixture-ultima-jornada {
+    display: none;
+  }
+
+  .fixture-jornada-mobile {
+    display: inline-block;
+    border: #0436ff solid 2px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 6px;
+    background-color: aliceblue;
+    margin: 5px 28px;
+  }
+
+  .fixture-resultado-mobile {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+    color: black;
+    margin-left: 10px;
+    padding-top: 10px;
+  }
+
+  .fixture-proxima-jornada {
+    display: none;
+  }
+
+  .fixture-clasificacion {
+    display: none;
+  }
+
+  .fixture-titulo-flex {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    color: black;
+  }
+}
+/* Fin MOBILE styles */
+/* Fin Section 4 - Fixture */
+
+/* Section 5 - Redes Sociales */
+.section-4-flex {
+  margin-top: 50px;
+}
+
+.background-titulo {
+  background-image: url(../img/cuadrícula.png) !important;
+  background-size: 45px;
+  width: 100%;
+  height: 45px;
+}
+
+.titulo-section4 {
+  font-family: "Kanit", sans-serif;
+  font-size: 55px;
+  color: $blanco;
+  text-align: center;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -3px;
+}
+
+.align-redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes-sociales {
+  margin: 20px 10px;
+  filter: drop-shadow(0 0 0.2rem black);
+  transition: 0.5s all;
+}
+
+.redes-sociales:hover {
+  margin-top: 5px;
+}
+
+.redes-background {
+  background-image: url(../img/background-azul.jpg) !important;
+  background-size: cover;
+}
+
+.vamos-inter-bottom {
+  font-family: "Permanent Marker", cursive;
+  font-size: 50px;
+  background-color: transparent;
+  color: #ffff4d;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: -5px;
+}
+/* Fin Section 5 - Redes Sociales */

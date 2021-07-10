@@ -1,0 +1,108 @@
+/* PÁGINA Directiva*/
+
+/* DESKTOP styles */
+
+.seccion-1-directiva {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url(../img/directiva.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 120px;
+  font-size: 65px;
+  font-family: "Kanit", sans-serif;
+  color: aliceblue;
+}
+
+.directiva-container {
+  margin: 100px auto !important;
+}
+
+.directiva-carta {
+  background-image: url(../img/background-cards-3.jpg) !important;
+  background-size: cover;
+  font-family: "inter" !important;
+  color: aliceblue;
+  border-radius: 3px;
+}
+
+.directiva-titulo-card {
+  border-bottom: #ffff4d solid 1px;
+  border-radius: 1px;
+  font-size: 30px !important;
+  margin-top: 30px;
+}
+
+.directiva-subtitulo-card {
+  color: #ffff4d !important;
+}
+
+.cardAppear1 {
+  animation: appear 2s;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.cardAppear2 {
+  animation: appear2 5s;
+}
+
+@keyframes appear2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Fin DESKTOP styles */
+
+/* MOBILE styles */
+
+@media only screen and (max-width: 500px) {
+  .seccion-1-directiva-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url(../img/directiva.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 45px;
+    font-size: 40px;
+    font-family: "Kanit", sans-serif;
+    color: aliceblue;
+  }
+}
+
+/* Fin MOBILE styles */
+
+/* TABLET styles */
+
+@media only screen and (min-width: 501px) and (max-width: 1200px) {
+  .seccion-1-directiva-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url(img/directiva.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 80px;
+    font-size: 40px;
+    font-family: "Kanit", sans-serif;
+    color: aliceblue;
+  }
+}

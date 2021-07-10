@@ -1,0 +1,211 @@
+/* Navbar */
+.section-1 {
+  background-image: url(../img/isla-azul.png);
+  background-size: cover;
+  padding: 120px 0px 0px 0px;
+  text-align: center;
+
+  .escudo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .escudo {
+    transition: 1s all;
+    display: inline-block;
+    filter: drop-shadow(0 0 0.5rem black);
+    animation-name: escudoAparece;
+    animation-duration: 4s;
+
+    &:hover {
+      transform: scale(1.1, 1.1);
+    }
+  }
+}
+
+.section-1-paginas {
+  background-image: none;
+  background-color: $amarillo;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+  text-align: center;
+
+  .escudo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .escudo {
+    transition: 1s all;
+    display: inline-block;
+    filter: drop-shadow(0 0 0.5rem black);
+    animation-name: escudoAparece;
+    animation-duration: 4s;
+
+    &:hover {
+      transform: scale(1.1, 1.1);
+    }
+  }
+}
+
+@keyframes escudoAparece {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.titulo-aparece {
+  font-family: "Kanit", cursive;
+  color: $amarillo;
+  margin: 0 15px;
+  font-size: 65px;
+  animation-duration: 8s;
+  animation-name: aparecer;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.link-navbar-paginas {
+  font-family: "Inter" !important;
+  color: aliceblue !important;
+  font-size: 18px;
+  background-color: $azul;
+}
+
+.link-navbar-paginas:hover {
+  background-color: transparent !important;
+  color: $azul !important;
+}
+
+.submenu {
+  background-image: none;
+  background-color: $azul;
+  padding: 5px;
+  border: none !important;
+}
+
+.title-encabezado {
+  font-family: "Permanent Marker", cursive !important;
+  color: aliceblue;
+  font-size: 60px !important;
+}
+
+.navbar {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center;
+  background-color: $azul !important;
+}
+
+.navbar li {
+  text-align: center;
+  margin-left: 40px;
+}
+
+.link-navbar {
+  display: block;
+  color: $blanco !important;
+  padding: 8px 2.5rem 8px 0 !important;
+  font-size: 20px !important;
+  font-family: "Kanit", sans-serif !important;
+  text-decoration: none !important;
+  border-right: $amarillo solid 1px;
+  border-collapse: separate;
+}
+
+.link-navbar-submenu {
+  color: $blanco;
+  font-size: 18px;
+  font-family: "Kanit", sans-serif;
+  text-decoration: none;
+  padding: 10px 20px;
+  position: relative;
+  right: 20px;
+  border: #0436ff 1px solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-navbar-submenu:last-of-type {
+  border-bottom: none;
+}
+
+.nav-submenu {
+  background-image: url(../img/background-azul.jpg) !important;
+}
+
+.link-navbar-submenu:hover {
+  background-color: rgba(240, 240, 240, 0.925) !important;
+  color: #0436ff;
+}
+
+.navbar-mobile {
+  display: none;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+.link-final {
+  border-right: $azul 1px solid;
+}
+
+/* MOBILE styles */
+@media only screen and (max-width: 754px) {
+  .section-1 {
+    background-image: url(../img/isla-azul-mobile.png) !important;
+    background-size: cover;
+    background-repeat: no-repeat !important;
+    padding-top: 45px;
+    text-align: center;
+  }
+
+  .title-encabezado {
+    font-family: "Permanent Marker", sans-serif;
+    color: aliceblue;
+    font-size: 48px !important;
+  }
+
+  .titulo-aparece {
+    display: none;
+  }
+
+  .submenu {
+    background-image: none;
+    background-color: $amarillo;
+    padding: 5px;
+  }
+}
+
+/* TABLET styles */
+@media only screen and (min-width: 755px) and (max-width: 1024px) {
+  .link-navbar {
+    font-size: 10px !important;
+  }
+}

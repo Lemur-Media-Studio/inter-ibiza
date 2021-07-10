@@ -1,0 +1,132 @@
+/* PÁGINA CONTACTO */
+
+/* DESKTOP styles */
+
+.mapa-mobile {
+  display: none;
+}
+
+.seccion-1-contacto {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url(../img/cancha-fondo-azul.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 120px;
+  font-size: 65px;
+  font-family: "Kanit", sans-serif;
+  color: aliceblue;
+}
+
+.datos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 100px 100px;
+  align-items: center;
+}
+
+.iconos-contacto {
+  font-family: "Inter", sans-serif;
+  font-size: 21px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  border: #0436ff 2px solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.iconos-contacto:last-of-type {
+  border-bottom: none;
+}
+
+.contacto-img {
+  margin-right: 10px;
+}
+
+.section-formulario {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  display: none;
+}
+
+.titulo-formulario {
+  font-size: 55px;
+  font-family: "Kanit", sans-serif;
+  text-align: center;
+}
+
+/* MOBILE styles */
+@media only screen and (max-width: 500px) {
+  .datos-container {
+    display: none;
+  }
+
+  .seccion-1-contacto {
+    display: none;
+  }
+
+  .mapa {
+    display: none;
+  }
+
+  .mapa-mobile {
+    display: flex;
+  }
+
+  .iconos-contacto {
+    display: none;
+  }
+
+  .seccion-1-contacto-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url(../img/cancha-fondo-azul.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 45px;
+    font-size: 40px;
+    font-family: "Kanit", sans-serif;
+    color: aliceblue;
+  }
+
+  .datos-container-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .iconos-contacto-mobile {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border: #0436ff 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+}
+
+/* TABLET styles */
+@media only screen and (min-width: 501px) and (max-width: 1200px) {
+  .seccion-1-contacto-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url(../img/cancha-fondo-azul.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 80px;
+    font-size: 40px;
+    font-family: "Kanit", sans-serif;
+    color: aliceblue;
+  }
+}
+
+/* Fin pagina contacto */
