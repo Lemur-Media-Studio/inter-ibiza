@@ -1,0 +1,99 @@
+/* Footer sponsor */
+
+.color-sponsors-mobile {
+    display: none;
+  }
+  
+  .color-sponsors {
+    background-color: #ffff4d;
+    margin-top: 15px;
+  }
+  
+  .imagen-sponsor {
+    margin-top: 5px;
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  .sponsors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: auto 50px;
+  }
+  
+  /* Fin fotos sponsor */
+  
+  /* Lemur footer */
+  
+  .lemur-container {
+    background-color: #0436ff;
+  }
+  
+  .lemur {
+    color: aliceblue;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    padding: 10px;
+  }
+  
+  /* Final Lemur footer */
+  
+  /* Mobile styles */ /* Madia type */ /* Media feature */
+  
+  @media only screen and (max-width: 500px) {
+    .color-sponsors {
+      margin-top: 5px;
+      background-color: #ffff4d;
+    }
+  
+    .tipografia-titulo {
+      font-size: 12px;
+    }
+  
+    .lemur {
+      font-size: 10px;
+    }
+  
+    .imagen-sponsor {
+      height: 50%;
+    }
+  }
+  
+  /* Tablet styles */
+  
+  @media only screen and (min-width: 451px) and (max-width: 960px) {
+    .imagen-sponsor {
+      padding: 20px;
+      margin: 5px;
+      height: 60%;
+    }
+  
+    .tipografia-titulo {
+      font-size: 15px;
+    }
+  
+    .lemur {
+      font-size: 12px;
+    }
+  }
+  
+  /* Desktop styles */
+  
+  @media only screen and (min-width: 961px) {
+    .imagen-sponsor {
+      padding: 20px;
+      margin: 10px;
+    }
+  
+    .tipografia-titulo {
+      font-size: 21px;
+    }
+  
+    .lemur {
+      font-size: 13px;
+    }
+  }
+  
+  /* Fin footer */
